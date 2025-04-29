@@ -40,6 +40,7 @@
           nvimWithMeta = nvim.overrideAttrs (oldAttrs: {
             meta = oldAttrs.meta // {
               description = "My Nixvim config";
+              license = pkgs.lib.licenses.mit;
             };
           });
         in
