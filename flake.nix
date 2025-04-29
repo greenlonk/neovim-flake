@@ -41,6 +41,9 @@
             meta = oldAttrs.meta // {
               description = "My Nixvim config";
               license = pkgs.lib.licenses.mit;
+              platforms = pkgs.lib.platforms.unix;
+              maintainers = [ "greenlonk" ];
+              homepage = "https://github.com/greenlonk/neovim-flake";
             };
           });
         in
