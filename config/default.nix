@@ -2,6 +2,7 @@
   # Plugins
   imports = [ 
   	./plugins
+    ./keymap.nix
 	];
 
   # Color scheme
@@ -14,17 +15,10 @@
   opts = {
     number = true;
     relativenumber = true;
+    tabstop = 2;
+    expandtab = true;
 
     shiftwidth = 2;
   };
-
-  # Keymaps
-  keymaps = [
-    {
-      action = "<cmd>Telescope live_grep<CR>";
-      key = "<leader>g";
-    }
-  ];
   
-   
 }

@@ -13,5 +13,6 @@
 	./lazygit.nix
 	./noice.nix
 	./indent-blankline.nix
+	./chadtree.nix
 	];
 }
