@@ -1,6 +1,6 @@
 # Neovim Flake
 
-My JetBrains-style Neovim configuration using [nixvim](https://github.com/nix-community/nixvim).
+My JetBrains-inspired Neovim configuration using [nixvim](https://github.com/nix-community/nixvim).
 
 ## Features
 - Telescope, Treesitter, LSP, CHADtree, LazyGit
