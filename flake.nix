@@ -29,7 +29,6 @@
               imports = [
                 ./config # import the module directly
                 ];
-              meta.description = "My Nixvim config";
             };
             # You can use `extraSpecialArgs` to pass additional arguments to your module files
             extraSpecialArgs = {
@@ -37,6 +36,12 @@
             };
           };
           nvim = nixvim'.makeNixvimWithModule nixvimModule;
+
+          nvimWithMeta = nvim.overrideAttrs (oldAttrs: {
+            meta = oldAttrs.meta // {
+              description = "My Nixvim config";
+            };
+          });
         in
         {
           checks = {
@@ -46,11 +51,11 @@
 
           packages = {
             # Lets you run `nix run .` to start nixvim
-            default = nvim;
+            default = nvimWithMeta;
           };
 
           devShells.default = pkgs.mkShell {
-            packages = [ nvim ];
+            packages = [ nvimWithMeta ];
           };
         };
     };
