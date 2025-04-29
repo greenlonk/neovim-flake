@@ -1,7 +1,7 @@
 {
   # Plugins
-  imports = [ 
-  	./bufferline.nix 
+  imports = [
+    ./bufferline.nix
     ./lualine.nix
     ./lsp.nix
     ./blink-cmp.nix

@@ -1,16 +1,16 @@
 {
   # Plugins
-  imports = [ 
-  	./plugins
+  imports = [
+    ./plugins
     ./keymap.nix
-	];
+  ];
 
   # Color scheme
   colorschemes.catppuccin.enable = true;
-  
+
   # Leader Key
   globals.mapleader = " ";
-  
+
   # Options
   opts = {
     number = true;
@@ -20,5 +20,5 @@
 
     shiftwidth = 2;
   };
-  
+
 }

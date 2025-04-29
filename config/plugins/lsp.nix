@@ -4,25 +4,25 @@
     servers = {
 
       # javascript / typescript
-	    ts_ls.enable = true;
-    	
-	    # lua
-	    lua_ls.enable = true;
+      ts_ls.enable = true;
 
-	    # rust
-	    rust_analyzer.enable = true;
+      # lua
+      lua_ls.enable = true;
 
-	    # Python
-	    pyright.enable = true;
+      # rust
+      rust_analyzer.enable = true;
 
-	    # YAML
-	    yamlls.enable = true;
+      # Python
+      pyright.enable = true;
 
-	    # Nix LS
-	    nixd.enable = true;
+      # YAML
+      yamlls.enable = true;
 
-	    # Bash
-	    bashls.enable = true;
+      # Nix LS
+      nixd.enable = true;
+
+      # Bash
+      bashls.enable = true;
     };
   };
 }
