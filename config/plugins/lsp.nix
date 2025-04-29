@@ -10,7 +10,11 @@
       lua_ls.enable = true;
 
       # rust
-      rust_analyzer.enable = true;
+      rust_analyzer = {
+        enable = true;
+        installRustc = false;
+        installCargo = false;
+        };
 
       # Python
       pyright.enable = true;
