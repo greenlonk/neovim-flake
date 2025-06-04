@@ -15,5 +15,6 @@
     ./indent-blankline.nix
     ./chadtree.nix
     ./nvim-autopairs.nix
+    ./toggleterm.nix
   ];
 }
