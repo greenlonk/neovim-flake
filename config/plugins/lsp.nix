@@ -27,6 +27,9 @@
 
       # Bash
       bashls.enable = true;
+
+      # Slint
+      slint_lsp.enable = true;
     };
   };
 }
